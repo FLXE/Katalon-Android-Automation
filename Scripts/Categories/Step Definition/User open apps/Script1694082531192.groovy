@@ -20,5 +20,5 @@ import org.openqa.selenium.Keys as Keys
 Mobile.startApplication('C:\\TELKOM WORK\\Binar Challenge\\Challenge Platinum\\Android\\secondhandapps\\Apk\\secondhand-24082023.apk', 
     true)
 
-Mobile.verifyElementVisible(findTestObject('New Categories/btnTelurusiKategori'), 6)
+Mobile.verifyElementVisible(findTestObject('Categories/btnTelurusiKategori'), 6)
 
