@@ -19,5 +19,8 @@ build
 /.settings/
 /.classpath
 .svn/
+/.cache/
 .cache/
+.project
+
 appium.log
