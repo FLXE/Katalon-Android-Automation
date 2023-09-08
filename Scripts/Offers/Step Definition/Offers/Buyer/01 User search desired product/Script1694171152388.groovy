@@ -17,3 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+Mobile.waitForElementPresent(findTestObject('Offers/Homepage/btnHome'), 3)
+
+Mobile.tap(findTestObject('Offers/Homepage/btnSearch'), 0)
+
+Mobile.waitForElementPresent(findTestObject('Offers/Homepage/fieldSearch'), 3)
+
+Mobile.setText(findTestObject('Offers/Homepage/fieldSearch'), 'groot', 0)
+

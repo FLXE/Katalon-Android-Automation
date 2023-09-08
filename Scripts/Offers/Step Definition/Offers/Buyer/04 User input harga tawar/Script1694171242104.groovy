@@ -17,3 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+Mobile.waitForElementPresent(findTestObject('Offers/Offers/fieldHargaTawar'), 3)
+
+Mobile.setText(findTestObject('Offers/Offers/fieldHargaTawar'), '270000', 0)
+
