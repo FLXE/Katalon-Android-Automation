@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.verifyElementVisible(findTestObject('Login/btnAkun'), 3)
+Mobile.verifyElementVisible(findTestObject('Register/fieldAlamat'), 3)
 
-Mobile.tap(findTestObject('Login/btnAkun'), 0)
+Mobile.setText(findTestObject('Register/fieldAlamat'), 'Jl.Jakarta Raya ', 0)
 

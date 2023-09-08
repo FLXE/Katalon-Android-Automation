@@ -17,7 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.verifyElementVisible(findTestObject('Login/btnAkun'), 3)
+WebUI.callTestCase(findTestCase('Login/Step Definition/001 User open apps'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Login/btnAkun'), 0)
+WebUI.callTestCase(findTestCase('Login/Step Definition/002 User click btn akun'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Login/Step Definition/003 User click btn masuk pageAkunsaya'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Register/Page/001 User Click label daftar'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Register/Page/003 User input email'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Register/Page/004 User input password'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Register/Page/005 User input noHP'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Register/Page/006 User input kota'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Register/Page/007 User input alamat'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Register/Page/008 User click btn Daftar'), [:], FailureHandling.STOP_ON_FAILURE)
 
