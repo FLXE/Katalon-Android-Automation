@@ -23,11 +23,17 @@ WebUI.callTestCase(findTestCase('Login/Step Definition/002 User click btn akun')
 
 WebUI.callTestCase(findTestCase('Login/Step Definition/003 User click btn masuk pageAkunsaya'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Login/Step Definition/004 User input unregistered e-mail'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Register/Step Denifition/001 User Click label daftar'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Login/Step Definition/005 User input password'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Register/Step Denifition/003 User input email with all numbers contain'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Login/Step Definition/006 User click btn masuk'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Register/Step Denifition/004 User input password'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Login/Step Definition/verify failed login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Register/Step Denifition/005 User input noHP'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Register/Step Denifition/006 User input kota'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Register/Step Denifition/007 User input alamat'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Register/Step Denifition/008 User click btn Daftar success'), [:], FailureHandling.STOP_ON_FAILURE)
 

@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.waitForElementPresent(findTestObject('Login/PopUp Warning failed login'), 3)
+Mobile.verifyElementVisible(findTestObject('Register/fieldEmail'), 3)
 
-Mobile.closeApplication()
+Mobile.setText(findTestObject('Register/fieldEmail'), '131313131', 0)
 
