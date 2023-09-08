@@ -17,8 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('C:\\TELKOM WORK\\Binar Challenge\\Challenge Platinum\\Android\\secondhandapps\\Apk\\secondhand-24082023.apk', 
-    true)
+Mobile.startExistingApplication('id.binar.fp.secondhand', FailureHandling.STOP_ON_FAILURE)
 
 Mobile.verifyElementVisible(findTestObject('Categories/btnTelurusiKategori'), 6)
 
