@@ -34,3 +34,5 @@ WebUI.callTestCase(findTestCase('Offers/Step Definition/Offers/Buyer/05 User tap
 WebUI.callTestCase(findTestCase('Offers/Step Definition/Offers/Buyer/06 Verify offer is sent awaiting seller respond'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.callTestCase(findTestCase('Offers/Step Definition/Login/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+

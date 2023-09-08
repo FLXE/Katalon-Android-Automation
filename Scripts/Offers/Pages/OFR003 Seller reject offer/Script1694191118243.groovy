@@ -17,3 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.callTestCase(findTestCase('Offers/Step Definition/Login/Start Application'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Offers/Step Definition/Login/Login as Seller'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Offers/Step Definition/Offers/Seller/01 User tap the account icon'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Offers/Step Definition/Offers/Seller/02 User tap Daftar Jual text'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Offers/Step Definition/Offers/Seller/03 User tap Diminati tab'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Offers/Step Definition/Offers/Seller/04 User select offer from buyer'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Offers/Step Definition/Offers/Seller/05 User tap tolak button'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Offers/Step Definition/Offers/Seller/06 Verify offer status become rejected'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Offers/Step Definition/Login/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+

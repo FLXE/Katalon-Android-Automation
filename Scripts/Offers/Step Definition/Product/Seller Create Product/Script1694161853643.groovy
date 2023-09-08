@@ -17,8 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication('id.binar.fp.secondhand', FailureHandling.STOP_ON_FAILURE)
-
 Mobile.waitForElementPresent(findTestObject('Offers/Product/btnTambahProduk'), 3)
 
 Mobile.tap(findTestObject('Offers/Product/btnTambahProduk'), 0)
