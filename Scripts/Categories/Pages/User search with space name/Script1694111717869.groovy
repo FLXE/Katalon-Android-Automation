@@ -17,7 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.verifyElementVisible(findTestObject('Categories/btnBid'), 15)
+WebUI.callTestCase(findTestCase('Categories/Step Definition/User open apps'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.closeApplication()
+WebUI.callTestCase(findTestCase('Categories/Step Definition/User input product only with double space'), [('space') : '  '], 
+    FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Categories/Step Definition/User can find random product contain space only'), [:], FailureHandling.STOP_ON_FAILURE)
 

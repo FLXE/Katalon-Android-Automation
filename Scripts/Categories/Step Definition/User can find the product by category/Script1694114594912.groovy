@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.verifyElementVisible(findTestObject('Categories/btnBid'), 15)
+Mobile.verifyElementVisible(findTestObject('Categories/detailProduckWithCategory'), 15)
 
 Mobile.closeApplication()
 

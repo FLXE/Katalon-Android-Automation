@@ -17,7 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.verifyElementVisible(findTestObject('Categories/btnBid'), 15)
+WebUI.callTestCase(findTestCase('Categories/Step Definition/User open apps'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.closeApplication()
+WebUI.callTestCase(findTestCase('Categories/Step Definition/User input unavailable product name'), [('unavailableproduct') : 'kacang goreng pahit'], 
+    FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Categories/Step Definition/User cannot find the unavailable product'), [:], FailureHandling.STOP_ON_FAILURE)
 
