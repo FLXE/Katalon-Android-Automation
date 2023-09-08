@@ -23,5 +23,5 @@ Mobile.tap(findTestObject('Offers/Homepage/btnSearch'), 0)
 
 Mobile.waitForElementPresent(findTestObject('Offers/Homepage/fieldSearch'), 3)
 
-Mobile.setText(findTestObject('Offers/Homepage/fieldSearch'), 'groot', 0)
+Mobile.setText(findTestObject('Offers/Homepage/fieldSearch'), 'funkoPOP', 0)
 

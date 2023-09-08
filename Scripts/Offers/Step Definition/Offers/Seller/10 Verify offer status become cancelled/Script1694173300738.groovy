@@ -17,3 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+Mobile.waitForElementPresent(findTestObject('Offers/Offers/textStatusTawaran'), 3)
+
+Mobile.verifyElementText(findTestObject('Offers/Offers/textStatusTawaran'), 'Penawaran ditolak')
+
+Mobile.pressBack()
+
+Mobile.pressBack()
+
+Mobile.pressBack()
+
+Mobile.waitForElementPresent(findTestObject('Offers/Homepage/btnHome'), 3)
+
