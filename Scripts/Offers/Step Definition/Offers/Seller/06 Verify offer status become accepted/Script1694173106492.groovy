@@ -23,5 +23,3 @@ Mobile.waitForElementPresent(findTestObject('Offers/Offers/textStatusTawaran'), 
 
 Mobile.verifyElementText(findTestObject('Offers/Offers/textStatusTawaran'), 'Berhasil terjual')
 
-Mobile.pressBack()
-

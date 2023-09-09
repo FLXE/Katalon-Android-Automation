@@ -17,29 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.waitForElementPresent(findTestObject('Offers/Product/btnTambahProduk'), 3)
+Mobile.waitForElementPresent(findTestObject('Offers/Product/itemProductList'), 0)
 
-Mobile.tap(findTestObject('Offers/Product/btnTambahProduk'), 0)
+Mobile.tap(findTestObject('Offers/Homepage/btnBackFromDaftarJual'), 0)
 
-Mobile.verifyElementVisible(findTestObject('Offers/Product/fieldNamaProduk'), 0)
+Mobile.waitForElementPresent(findTestObject('Offers/Homepage/btnHome'), 0)
 
-Mobile.setText(findTestObject('Offers/Product/fieldNamaProduk'), 'FunkoPOP! Deadpool', 0)
-
-Mobile.setText(findTestObject('Offers/Product/fieldHargaProduk'), '275000', 0)
-
-Mobile.tap(findTestObject('Offers/Product/dropdownKategoriProduk'), 0)
-
-Mobile.tap(findTestObject('Offers/Product/selectKategori'), 0)
-
-Mobile.setText(findTestObject('Offers/Product/fieldLokasiProduk'), 'Solo', 0)
-
-Mobile.setText(findTestObject('Offers/Product/fieldDeskripsiProduk'), 'Funko POP! MARVEL DEADPOOL', 0)
-
-Mobile.tap(findTestObject('Offers/Product/btnFotoProduk'), 0)
-
-Mobile.tap(findTestObject('Offers/Product/btnGaleriProduk'), 0)
-
-Mobile.tap(findTestObject('Offers/Product/selectedImage'), 0)
-
-Mobile.tap(findTestObject('Offers/Product/btnTerbitkanProduk'), 0)
+Mobile.tap(findTestObject('Offers/Homepage/btnHome'), 0)
 
