@@ -17,22 +17,22 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Offers/Step Definition/Login/Start Application'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Offers/Step Definition/Login/Start Application'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Offers/Step Definition/Login/Login as Buyer'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Offers/Step Definition/Login/Login as Buyer'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Offers/Step Definition/Offers/Buyer/01 User search desired product'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Offers/Step Definition/Offers/Buyer/01 User search desired product'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Offers/Step Definition/Offers/Buyer/02 User select desired product'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Offers/Step Definition/Offers/Buyer/02 User select desired product'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Offers/Step Definition/Offers/Buyer/03 User tap tertarik button'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Offers/Step Definition/Offers/Buyer/03 User tap tertarik button'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Offers/Step Definition/Offers/Buyer/04 User input harga tawar'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Offers/Step Definition/Offers/Buyer/04 User input harga tawar'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Offers/Step Definition/Offers/Buyer/05 User tap kirim button to send offer'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Offers/Step Definition/Offers/Buyer/05 User tap kirim button to send offer'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Offers/Step Definition/Offers/Buyer/06 Verify offer is sent awaiting seller respond'), 
+Mobile.callTestCase(findTestCase('Offers/Step Definition/Offers/Buyer/06 Verify offer is sent awaiting seller respond'), 
     [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Offers/Step Definition/Login/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Offers/Step Definition/Login/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 
