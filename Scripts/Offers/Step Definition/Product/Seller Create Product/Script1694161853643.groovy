@@ -16,6 +16,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
+import io.appium.java_client.android.AndroidDriver
+import io.appium.java_client.android.nativekey.KeyEvent
+import io.appium.java_client.android.nativekey.AndroidKey
 
 Mobile.waitForElementPresent(findTestObject('Offers/Product/btnTambahProduk'), 3)
 
@@ -29,7 +33,10 @@ Mobile.setText(findTestObject('Offers/Product/fieldHargaProduk'), '275000', 0)
 
 Mobile.tap(findTestObject('Offers/Product/dropdownKategoriProduk'), 0)
 
-Mobile.tap(findTestObject('Offers/Product/selectKategori'), 0)
+AndroidDriver<?> driver = MobileDriverFactory.getDriver()
+driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN))
+driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN))
+driver.pressKey(new KeyEvent(AndroidKey.ENTER))
 
 Mobile.setText(findTestObject('Offers/Product/fieldLokasiProduk'), 'Solo', 0)
 
