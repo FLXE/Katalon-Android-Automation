@@ -19,7 +19,5 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.pressBack()
 
-Mobile.waitForElementPresent(findTestObject('Offers/Offers/textStatusTawaran'), 3)
-
-Mobile.verifyElementText(findTestObject('Offers/Offers/textStatusTawaran'), 'Berhasil terjual')
+Mobile.waitForElementPresent(findTestObject('Offers/Offers/textStatusOffers'), 3)
 

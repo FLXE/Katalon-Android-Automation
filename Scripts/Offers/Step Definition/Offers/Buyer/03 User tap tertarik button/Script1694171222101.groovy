@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.verifyElementVisible(findTestObject('Offers/Offers/btnTertarik'), 5)
+Mobile.waitForElementPresent(findTestObject('Offers/Offers/btnTertarikClassName'), 3)
 
-Mobile.tap(findTestObject('Offers/Offers/btnTertarik'), 0)
+Mobile.tap(findTestObject('Offers/Offers/btnTertarikClassName'), 0)
 
