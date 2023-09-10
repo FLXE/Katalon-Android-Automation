@@ -17,7 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('D:\\FOLDER CLONE GITLAB\\secondhandapps\\Apk\\secondhand-24082023.apk', true)
+Mobile.swipe(100, 500, 100, 100)
 
-Mobile.verifyElementVisible(findTestObject('Categories/btnTelurusiKategori'), 6)
+Mobile.verifyElementVisible(findTestObject('Register/bntDaftar'), 3)
+
+Mobile.tap(findTestObject('Register/labelDaftar'), 5)
 

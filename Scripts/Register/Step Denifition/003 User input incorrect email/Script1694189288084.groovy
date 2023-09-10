@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('D:\\FOLDER CLONE GITLAB\\secondhandapps\\Apk\\secondhand-24082023.apk', true)
+Mobile.verifyElementVisible(findTestObject('Register/fieldEmail'), 3)
 
-Mobile.verifyElementVisible(findTestObject('Categories/btnTelurusiKategori'), 6)
+Mobile.setText(findTestObject('Register/fieldEmail'), 'testing01@akucoba.coba', 0)
 

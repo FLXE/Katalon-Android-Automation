@@ -17,7 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('D:\\FOLDER CLONE GITLAB\\secondhandapps\\Apk\\secondhand-24082023.apk', true)
+Mobile.callTestCase(findTestCase('Offers/Step Definition/Login/Start Application'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyElementVisible(findTestObject('Categories/btnTelurusiKategori'), 6)
+Mobile.callTestCase(findTestCase('Offers/Step Definition/Login/Login as Seller'), [:], FailureHandling.STOP_ON_FAILURE)
+
+Mobile.callTestCase(findTestCase('Offers/Step Definition/Product/Seller Create Product'), [:], FailureHandling.STOP_ON_FAILURE)
+
+Mobile.callTestCase(findTestCase('Offers/Step Definition/Product/Verify product successfully created'), [:], FailureHandling.STOP_ON_FAILURE)
+
+Mobile.callTestCase(findTestCase('Offers/Step Definition/Login/Logout'), [:], FailureHandling.STOP_ON_FAILURE)
 
