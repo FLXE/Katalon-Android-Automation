@@ -9,7 +9,7 @@ Feature: Categories
 
   @ctgrs2
   Scenario: User search with unavailable product name
-    Given user already open application
+    Given user application
     When user input unavailable product name
     Then user cannot find the unavailable product
 
@@ -27,6 +27,7 @@ Feature: Categories
 
   @ctgrs5
   Scenario: user search product by categories
-    Given user already open apps
+    Given user already open app secondhand
     When user select category
     Then user can find the product by the category
+
