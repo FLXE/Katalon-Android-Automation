@@ -29,135 +29,135 @@ public class login {
 
 	@Given("user already open apps")
 	public void user_already_open_apps() {
-		WebUI.callTestCase(findTestCase('Login/Step Definition/001 User open apps'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Login/Step Definition/001 User open apps'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("user click akun")
 	public void user_click_akun() {
-		WebUI.callTestCase(findTestCase('Login/Step Definition/002 User click btn akun'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Login/Step Definition/002 User click btn akun'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("user click btn masuk pageAkunsaya")
 	public void user_click_btn_masuk_pageAkunsaya() {
-		WebUI.callTestCase(findTestCase('Login/Step Definition/003 User click btn masuk pageAkunsaya'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Login/Step Definition/003 User click btn masuk pageAkunsaya'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("user input email")
 	public void user_input_email() {
-		WebUI.callTestCase(findTestCase('Login/Step Definition/004 User input email'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Login/Step Definition/004 User input email'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("user input password")
 	public void user_input_password() {
-		WebUI.callTestCase(findTestCase('Login/Step Definition/005 User input password'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Login/Step Definition/005 User input password'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("user click button masuk")
 	public void user_click_button_masuk() {
-		WebUI.callTestCase(findTestCase('Login/Step Definition/006 User click btn masuk'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Login/Step Definition/006 User click btn masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Then("user succesful login and directed to home page")
 	public void user_succesful_login_and_directed_to_home_page() {
-		WebUI.callTestCase(findTestCase('Login/Step Definition/Verify Login success'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Login/Step Definition/Verify Login success'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	//lGN02
 
 	@Given("User already open login page")
 	public void user_already_open_login_page() {
-		WebUI.callTestCase(findTestCase('Login/Step Definition/001 User open apps'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Login/Step Definition/001 User open apps'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("User click account")
 	public void user_click_account() {
-		WebUI.callTestCase(findTestCase('Login/Step Definition/002 User click btn akun'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Login/Step Definition/002 User click btn akun'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@And("User click btn masuk page akunsaya")
 	public void user_click_btn_masuk_page_akunsaya() {
-		WebUI.callTestCase(findTestCase('Login/Step Definition/003 User click btn masuk pageAkunsaya'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Login/Step Definition/003 User click btn masuk pageAkunsaya'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@And("User input Email")
 	public void user_input_Email() {
-		WebUI.callTestCase(findTestCase('Login/Step Definition/004 User input email'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Login/Step Definition/004 User input email'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@And("User button Masuk")
 	public void user_button_Masuk() {
-		WebUI.callTestCase(findTestCase('Login/Step Definition/006 User click btn masuk'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Login/Step Definition/006 User click btn masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 
 	}
 
 	@Then("User can not login and pop up warning password")
 	public void User_can_not_login_and_pop_up_warning_password() {
-		WebUI.callTestCase(findTestCase('Login/Step Definition/Warning Text Password'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Login/Step Definition/Warning Text Password'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	//LGN03
 	@Given("User already open loginPage")
 	public void user_already_open_loginPage() {
-		WebUI.callTestCase(findTestCase('Login/Step Definition/001 User open apps'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Login/Step Definition/001 User open apps'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("User click btnMasuk pageAkunsaya")
 	public void user_click_btnMasuk_pageAkunsaya() {
-		WebUI.callTestCase(findTestCase('Login/Step Definition/002 User click btn akun'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Login/Step Definition/002 User click btn akun'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@And("User click Masuk")
 	public void user_click_Masuk() {
-		WebUI.callTestCase(findTestCase('Login/Step Definition/006 User click btn masuk'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Login/Step Definition/006 User click btn masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@And("User click btnMasuk")
 	public void user_click_btnMasuk() {
-		WebUI.callTestCase(findTestCase('Login/Step Definition/006 User click btn masuk'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Login/Step Definition/006 User click btn masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Then("User can not login and pop up warning text email tidak boleh kosong")
 	public void user_can_not_login_and_pop_up_warning_text_email_tidak_boleh_kosong() {
-		WebUI.callTestCase(findTestCase('Login/Step Definition/Verify Email tidak boleh kosong'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Login/Step Definition/Verify Email tidak boleh kosong'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	//LGN004
 	@Given("User ready open login page")
 	public void user_ready_open_login_page() {
-		WebUI.callTestCase(findTestCase('Login/Step Definition/001 User open apps'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Login/Step Definition/001 User open apps'), [:], FailureHandling.STOP_ON_FAILURE)
 
 	}
 
 	@When("User click BtnAkun")
 	public void user_click_BtnAkun() {
-		WebUI.callTestCase(findTestCase('Login/Step Definition/002 User click btn akun'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Login/Step Definition/002 User click btn akun'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("User click BTNMasuk")
 	public void user_click_BTNMasuk() {
-		WebUI.callTestCase(findTestCase('Login/Step Definition/006 User click btn masuk'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Login/Step Definition/006 User click btn masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 
 
 	@When("User input EMail")
 	public void user_input_EMail() {
-		WebUI.callTestCase(findTestCase('Login/Step Definition/004 User input email'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Login/Step Definition/004 User input email'), [:], FailureHandling.STOP_ON_FAILURE)
 
 	}
 
 	@When("User input PassWord")
 	public void user_input_PassWord() {
-		WebUI.callTestCase(findTestCase('Login/Step Definition/005 User input password'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Login/Step Definition/005 User input password'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@When("User click bTnMasuk")
 	public void user_click_bTnMasuk() {
-		WebUI.callTestCase(findTestCase('Login/Step Definition/006 User click btn masuk'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Login/Step Definition/006 User click btn masuk'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
 	@Then("user failed login")
 	public void user_failed_login() {
-		WebUI.callTestCase(findTestCase('Login/Step Definition/verify failed login'), [:], FailureHandling.STOP_ON_FAILURE)
+		Mobile.callTestCase(findTestCase('Login/Step Definition/verify failed login'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 }

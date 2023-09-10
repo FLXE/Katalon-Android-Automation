@@ -8,28 +8,7 @@ import io.appium.java_client.touch.offset.PointOption as PointOption
 
 Mobile.verifyElementVisible(findTestObject('Categories/btnSemuaKategori'), 5)
 
-SwipeableAndroidDriver driver = MobileDriverFactory.getDriver()
-
-// Get screen dimensions
-def screenSize = driver.manage().window().size
-
-def screenWidth = screenSize.width
-
-def screenHeight = screenSize.height
-
-// Calculate the start and end points for the swipe
-def startX = screenWidth * 0.8 // 80% from the right edge
-
-def endX = screenWidth * 0.2 // 20% from the left edge
-
-def startY = screenHeight / 2 // Middle of the screen
-
-// Define the duration for the swipe action
-def duration = Duration.ofMillis(1000 // 1000 milliseconds (1 second)
-    )
-
-// Perform the swipe action
-driver.swipe()
+Mobile.swipe(500, 100, 100, 100)
 
 Mobile.verifyElementVisible(findTestObject('Categories/btnCategory'), 10)
 

@@ -19,3 +19,5 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.verifyElementVisible(findTestObject('Login/textWarningPassword'), 3)
 
+Mobile.closeApplication()
+

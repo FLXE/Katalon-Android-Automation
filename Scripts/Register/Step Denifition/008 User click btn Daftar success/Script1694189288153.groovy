@@ -21,5 +21,9 @@ Mobile.swipe(100, 500, 100, 100)
 
 Mobile.verifyElementVisible(findTestObject('Register/bntDaftar'), 3)
 
-Mobile.tap(findTestObject('Register/labelDaftar'), 5)
+Mobile.tap(findTestObject('Register/bntDaftar'), 5)
+
+Mobile.waitForElementPresent(findTestObject('Login/verify Login Success'), 3)
+
+Mobile.closeApplication()
 

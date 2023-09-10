@@ -19,5 +19,5 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.verifyElementVisible(findTestObject('Register/fieldEmail'), 3)
 
-Mobile.setText(findTestObject('Register/fieldEmail'), 'testing02@gmail.com', 0)
+Mobile.setText(findTestObject('Register/fieldEmail'), 'testing13@gmail.com', 0)
 
