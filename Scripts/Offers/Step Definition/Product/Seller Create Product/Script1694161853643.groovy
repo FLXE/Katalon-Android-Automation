@@ -16,10 +16,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
-import io.appium.java_client.android.AndroidDriver
-import io.appium.java_client.android.nativekey.KeyEvent
-import io.appium.java_client.android.nativekey.AndroidKey
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
+import io.appium.java_client.android.AndroidDriver as AndroidDriver
+import io.appium.java_client.android.nativekey.KeyEvent as KeyEvent
+import io.appium.java_client.android.nativekey.AndroidKey as AndroidKey
 
 Mobile.waitForElementPresent(findTestObject('Offers/Product/btnTambahProduk'), 3)
 
@@ -31,12 +31,19 @@ Mobile.setText(findTestObject('Offers/Product/fieldNamaProduk'), 'FunkoPOP! Dead
 
 Mobile.setText(findTestObject('Offers/Product/fieldHargaProduk'), '275000', 0)
 
-Mobile.tap(findTestObject('Offers/Product/dropdownKategoriProduk'), 0)
+Mobile.tap(findTestObject('Offers/Product/dropdownKategoriProduct'), 0)
+
+Mobile.delay(1, FailureHandling.STOP_ON_FAILURE)
 
 AndroidDriver<?> driver = MobileDriverFactory.getDriver()
+
 driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN))
+
 driver.pressKey(new KeyEvent(AndroidKey.DPAD_DOWN))
+
 driver.pressKey(new KeyEvent(AndroidKey.ENTER))
+
+Mobile.waitForElementPresent(findTestObject('Offers/Product/selectedCategoriesProduct'), 3)
 
 Mobile.setText(findTestObject('Offers/Product/fieldLokasiProduk'), 'Solo', 0)
 
