@@ -17,15 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.pressBack()
+Mobile.startApplication('D:\\secondhandapps\\Apk\\secondhand-24082023.apk', false)
 
-Mobile.pressBack()
+Mobile.verifyElementVisible(findTestObject('Profile/btnakun'), 3)
 
-Mobile.verifyElementVisible(findTestObject('Product/Login/btnAkunNavbar'), 0)
+Mobile.tap(findTestObject('Profile/btnakun'), 3)
 
-Mobile.tap(findTestObject('Product/Login/btnAkunNavbar'), 0)
+Mobile.verifyElementVisible(findTestObject('login/btnmasuk'), 3)
 
-Mobile.tap(findTestObject('Product/UpdateProduct/btnKeluarAkun'), 0)
+Mobile.tap(findTestObject('login/btnmasuk'), 3)
 
-Mobile.verifyElementVisible(findTestObject('Product/Login/btnAkunNavbar'), 0)
+Mobile.verifyElementVisible(findTestObject('login/btnemail'), 3)
+
+Mobile.setText(findTestObject('login/btnemail'), 'revimarhaendra22@gmail.com', 3)
+
+Mobile.verifyElementVisible(findTestObject('login/btnpassword'), 3)
+
+Mobile.setText(findTestObject('login/btnpassword'), 'Revivengeance020797', 3)
+
+Mobile.tap(findTestObject('login/btnlogin'), 3)
 

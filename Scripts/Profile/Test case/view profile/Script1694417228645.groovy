@@ -17,15 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.pressBack()
+WebUI.callTestCase(findTestCase('login/Step Definition/user has been login and open profile page'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.pressBack()
+WebUI.callTestCase(findTestCase('Profile/Step Definition/user click pencil icon'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyElementVisible(findTestObject('Product/Login/btnAkunNavbar'), 0)
-
-Mobile.tap(findTestObject('Product/Login/btnAkunNavbar'), 0)
-
-Mobile.tap(findTestObject('Product/UpdateProduct/btnKeluarAkun'), 0)
-
-Mobile.verifyElementVisible(findTestObject('Product/Login/btnAkunNavbar'), 0)
+WebUI.callTestCase(findTestCase('Profile/Step Definition/profile updated and pop up successfully saving data'), [:], FailureHandling.STOP_ON_FAILURE)
 

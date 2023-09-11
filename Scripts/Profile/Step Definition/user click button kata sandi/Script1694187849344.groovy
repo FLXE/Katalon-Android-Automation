@@ -17,15 +17,23 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.pressBack()
+Mobile.verifyElementVisible(findTestObject('null'), 3)
 
-Mobile.pressBack()
+Mobile.tap(findTestObject('null'), 3)
 
-Mobile.verifyElementVisible(findTestObject('Product/Login/btnAkunNavbar'), 0)
+Mobile.waitForElementPresent(findTestObject('null'), 3)
 
-Mobile.tap(findTestObject('Product/Login/btnAkunNavbar'), 0)
+Mobile.tap(findTestObject('null'), 3)
 
-Mobile.tap(findTestObject('Product/UpdateProduct/btnKeluarAkun'), 0)
+Mobile.hideKeyboard()
 
-Mobile.verifyElementVisible(findTestObject('Product/Login/btnAkunNavbar'), 0)
+Mobile.tap(findTestObject('Profile/fieldkatasandibaru'), 3)
+
+Mobile.hideKeyboard()
+
+Mobile.tap(findTestObject('Profile/fieldkonfirmasikatasandi'), 3)
+
+Mobile.hideKeyboard()
+
+Mobile.tap(findTestObject('Profile/btnsimpan'), 3)
 
