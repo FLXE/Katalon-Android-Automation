@@ -17,10 +17,4 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-int RandomNumber
-RandomNumber = ((Math.random() * 1000) as int)
-
-Mobile.verifyElementVisible(findTestObject('Register/fieldEmail'), 3)
-
-Mobile.setText(findTestObject('Register/fieldEmail'), 'newemailtest' + RandomNumber + '@gmail.com', 0)
-
+CucumberKW.runWithCucumberRunner(offersRunner.OfferAcceptedFinished.class)
