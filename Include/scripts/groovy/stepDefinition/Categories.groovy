@@ -1,4 +1,4 @@
-package stepdefinition
+package stepDefinition
 
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 
