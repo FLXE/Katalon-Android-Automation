@@ -27,7 +27,7 @@ public class Categories {
 
 
 	@Given("user already open application")
-	public void uuser_already_open_application() {
+	public void user_already_open_application() {
 		Mobile.callTestCase(findTestCase('Categories/Step Definition/User open apps'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 	@When("user input unavailable product name")
