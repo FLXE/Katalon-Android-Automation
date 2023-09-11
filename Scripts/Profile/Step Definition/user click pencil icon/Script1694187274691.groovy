@@ -17,15 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.pressBack()
+Mobile.verifyElementVisible(findTestObject('Profile/btnpencil'), 3)
 
-Mobile.pressBack()
-
-Mobile.verifyElementVisible(findTestObject('Product/Login/btnAkunNavbar'), 0)
-
-Mobile.tap(findTestObject('Product/Login/btnAkunNavbar'), 0)
-
-Mobile.tap(findTestObject('Product/UpdateProduct/btnKeluarAkun'), 0)
-
-Mobile.verifyElementVisible(findTestObject('Product/Login/btnAkunNavbar'), 0)
+Mobile.tap(findTestObject('Profile/btnpencil'), 3)
 

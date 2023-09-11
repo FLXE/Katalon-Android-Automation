@@ -17,15 +17,29 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.pressBack()
+Mobile.verifyElementVisible(findTestObject('Profile/btnkatasandi'), 3)
 
-Mobile.pressBack()
+Mobile.tap(findTestObject('Profile/btnkatasandi'), 3)
 
-Mobile.verifyElementVisible(findTestObject('Product/Login/btnAkunNavbar'), 0)
+Mobile.verifyElementVisible(findTestObject('Profile/btnkatasandi'), 3)
 
-Mobile.tap(findTestObject('Product/Login/btnAkunNavbar'), 0)
+Mobile.tap(findTestObject('null'), 3)
 
-Mobile.tap(findTestObject('Product/UpdateProduct/btnKeluarAkun'), 0)
+Mobile.setText(findTestObject('null'), 'Revivengeance020797', 0)
 
-Mobile.verifyElementVisible(findTestObject('Product/Login/btnAkunNavbar'), 0)
+Mobile.hideKeyboard()
+
+Mobile.tap(findTestObject('Profile/fieldkatasandibaru'), 3)
+
+Mobile.setText(findTestObject('Profile/fieldkatasandibaru'), 'Rockshillcamp020797', 0)
+
+Mobile.hideKeyboard()
+
+Mobile.tap(findTestObject('Profile/fieldkonfirmasikatasandi'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.setText(findTestObject('Profile/fieldkonfirmasikatasandi'), 'Rockshillcamp', 0)
+
+Mobile.hideKeyboard()
+
+Mobile.tap(findTestObject('Profile/btnsimpankatasandi'), 0)
 
