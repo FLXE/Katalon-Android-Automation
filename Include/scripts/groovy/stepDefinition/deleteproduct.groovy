@@ -1,4 +1,4 @@
-package stepdefinition
+package stepDefinition
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -54,7 +54,7 @@ public class deleteproduct {
 	@Then("user success delete product")
 	public void user_success_delete_product() {
 		Mobile.callTestCase(findTestCase('Product/Delete Product/Step Definition/06 Success delete product'), [:], FailureHandling.STOP_ON_FAILURE)
-		
+
 		Mobile.callTestCase(findTestCase('Product/Update Product/Step Definition/10 Log Out'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 }

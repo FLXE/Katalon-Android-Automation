@@ -1,4 +1,4 @@
-package stepdefinition
+package stepDefinition
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -64,7 +64,7 @@ public class updateproduct {
 	@And("product is updated")
 	public void product_is_updated() {
 		Mobile.callTestCase(findTestCase('Product/Update Product/Step Definition/09 Success Update Product'), [:], FailureHandling.STOP_ON_FAILURE)
-		
+
 		Mobile.callTestCase(findTestCase('Product/Update Product/Step Definition/10 Log Out'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 
@@ -106,7 +106,7 @@ public class updateproduct {
 	@Then("product is not update and gave popup failed message")
 	public void product_is_not_update_and_gave_popup_failed_message() {
 		Mobile.callTestCase(findTestCase('Product/Update Product/Step Definition/Warning Data Kosong'), [:], FailureHandling.STOP_ON_FAILURE)
-		
+
 		Mobile.callTestCase(findTestCase('Product/Update Product/Step Definition/10 Log Out'), [:], FailureHandling.STOP_ON_FAILURE)
 	}
 }
