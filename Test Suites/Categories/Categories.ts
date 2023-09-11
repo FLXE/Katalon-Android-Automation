@@ -12,35 +12,35 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>051fbc27-b7e7-48bf-a366-7fac12647615</testSuiteGuid>
    <testCaseLink>
-      <guid>ba7e93d5-d73a-4f58-823c-0bd71c91194d</guid>
+      <guid>ef6dd8f2-0cae-488b-aca6-38cde05b791b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Categories/Pages/User search with available product</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>22d85e90-44a3-44e9-8b56-777719c55a8d</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Categories/Pages/User search unavailable product</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>755cd99c-f0d8-4a2e-abde-03b86f621793</guid>
+      <guid>5c58b32b-392d-4a2e-9b08-4aeae0799777</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Categories/Pages/User search with blank produk name</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c018bb3c-6fe9-442d-8002-1b56f61e8e5f</guid>
+      <guid>46ebc22c-f5d8-4cf9-b327-6697b7d5b126</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Categories/Pages/User search unavailable product</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4b3439b2-9400-458e-a839-22bccd60a744</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Categories/Pages/User search with space name</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5013e12e-35a9-4234-949d-102a84e5083a</guid>
+      <guid>29c5a790-f277-4bc2-9f0a-1ea3db4f8fad</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Categories/Pages/User search product by category</testCaseId>

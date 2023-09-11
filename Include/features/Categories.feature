@@ -9,7 +9,7 @@ Feature: Categories
 
   @ctgrs2
   Scenario: User search with unavailable product name
-    Given user application
+    Given user already open application
     When user input unavailable product name
     Then user cannot find the unavailable product
 

@@ -6,13 +6,11 @@ import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as Mobil
 import io.appium.java_client.touch.WaitOptions as WaitOptions
 import io.appium.java_client.touch.offset.PointOption as PointOption
 
-Mobile.verifyElementVisible(findTestObject('Categories/btnSemuaKategori'), 5)
+Mobile.tap(findTestObject('Categories/btnPilihCategory'), 5)
 
-Mobile.swipe(500, 100, 100, 100)
+Mobile.waitForElementPresent(findTestObject('Categories/cardProductbyCategory'), 3)
 
-Mobile.verifyElementVisible(findTestObject('Categories/btnCategory'), 10)
+Mobile.tap(findTestObject('Categories/cardProductbyCategory'), 3)
 
-Mobile.tap(findTestObject('Categories/btnCategory'), 5)
-
-Mobile.tap(findTestObject('Categories/btnSelectedProductbyCategory'), 5)
+Mobile.waitForElementPresent(findTestObject('Categories/btnBid'), 7)
 
