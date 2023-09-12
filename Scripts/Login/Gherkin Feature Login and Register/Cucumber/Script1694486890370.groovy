@@ -17,5 +17,4 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('D:\\secondhandapps\\Apk\\secondhand-24082023.apk', true)
-
+CucumberKW.runWithCucumberRunner (Authentication_gherkin.class)

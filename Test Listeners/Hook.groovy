@@ -39,12 +39,12 @@ class Hook {
 	}
 
 	
-	@BeforeTestSuite
-	def sampleBeforeTestSuite(TestSuiteContext testSuiteContext) {
-		println testSuiteContext.getTestSuiteId()
-	}
-	@AfterTestSuite
-	def sampleAfterTestSuite(TestSuiteContext testSuiteContext) {
-		println testSuiteContext.getTestSuiteId()
-	}
+//	@BeforeTestSuite
+//	def sampleBeforeTestSuite(TestSuiteContext testSuiteContext) {
+//		println testSuiteContext.getTestSuiteId()
+//	}
+//	@AfterTestSuite
+//	def sampleAfterTestSuite(TestSuiteContext testSuiteContext) {
+//		println testSuiteContext.getTestSuiteId()
+//	}
 }
