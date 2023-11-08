@@ -1,4 +1,3 @@
-
 # SecondHand Android Automation Testing
 
 This Repository contain automation testing for SecondHand Mobile (Android) application using Katalon Studio as part of [BINAR Academy](https://www.binaracademy.com/) Quality Assurance Engineer Bootcamp. In this project, you can automatically do feature exploration with proper configuration.
@@ -49,3 +48,7 @@ This project is done. There'll be no more improvement made.
 
 Since this project is built in limited time, there'll be many mistakes. Common mistakes you'll encounter in this project are misconfigured object in step definition, Objects in the Object Repository needs re-adjustment for different sceen size, inconsistent filename capitalizing, and many more.
 
+## More Project
+
+We also did the website version of the SecondHand can be seen in this git
+[SecondHand Website Automation Testing](https://gitlab.com/wisamaisam/webautomationssteamdeadpool)
